@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(241, 247, 246);
+  align-items: center;
+  box-shadow: 1px 2px 2px #d2d2d2;
+  z-index: 100;
+  max-height: 80px;
+}
+
+.expense_img {
+  width: 170px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.header_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list_item {
+  padding-right: 30px;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(145, 32, 145);
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+.home {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(255, 254, 253);
+  position: relative;
+}
+
+.child:nth-child(1) {
+  flex: 0.1;
+}
+
+.child:nth-child(2) {
+  flex: 0.8;
+}

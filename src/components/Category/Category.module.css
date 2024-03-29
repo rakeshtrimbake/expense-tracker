@@ -1,0 +1,24 @@
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  position: absolute;
+  top: 120px;
+  margin: 0 56px;
+  width: 86%;
+
+}
+
+.category_list {
+  list-style: none;
+  font-size: 16px;
+}
+
+.category_heading {
+  font-size: 2rem;
+  color: rgb(8, 225, 192);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
