@@ -1,20 +1,19 @@
-.sidebar_list{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(93, 99, 97);
-    min-height:calc(100vh - 82px);
-    width: 12vw;
-    padding-top: 30px;
-    margin-top: 82px;
-    position: fixed;
+.sidebar_list {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(93, 99, 97);
+  min-height: calc(100vh - 80px);
+  width: calc(12% + 5px);
+  padding-top: 30px;
+  position: fixed;
 }
 
-.list_item{
-    list-style: none;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    color: white;
+.list_item {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
 }

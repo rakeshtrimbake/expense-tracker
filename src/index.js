@@ -3,26 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Category from "./components/Category/Category";
-import Credit from "./components/Credit/Credit";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <Category />,
-      },
-      {
-        path: "/credit",
-        element: <Credit />,
-      },
-    ],
-  },
-]);
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/Router";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

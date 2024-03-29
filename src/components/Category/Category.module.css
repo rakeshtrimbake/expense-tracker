@@ -1,13 +1,16 @@
 .category {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow-y: auto;
-  position: absolute;
-  top: 120px;
   margin: 0 56px;
-  width: 86%;
+  width: 90%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 96%;
 
 }
 

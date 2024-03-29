@@ -6,11 +6,31 @@ const Header = () => {
   return (
     <div>
       <header className={styles.header}>
-        <img src={expenseImg} className={styles.expense_img} alt="expense"></img>
+        <img
+          src={expenseImg}
+          className={styles.expense_img}
+          alt="expense"
+        ></img>
         <ul className={styles.header_list}>
-          <li className={styles.list_item}><Link to={'/'}>{`Category`.toUpperCase()}</Link></li>
-          <li className={styles.list_item}>{`reports`.toUpperCase()}</li>
-          <li className={styles.list_item}>{`Login`.toUpperCase()}</li>
+          <li className={styles.list_item}>
+            <Link
+              to={"/"}
+              style={{ textDecoration: "inherit", color: "inherit" }}
+            >
+              {`Category`.toUpperCase()}
+            </Link>
+          </li>
+          <li className={styles.list_item}>
+            <Link
+              to="/reports"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              {`reports`.toUpperCase()}
+            </Link>
+          </li>
+          <li className={styles.list_item}>
+            <Link to="/login">{`Login`.toUpperCase()}</Link>
+          </li>
         </ul>
       </header>
     </div>

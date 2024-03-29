@@ -3,7 +3,7 @@ import styles from './Credit.module.css'
 
 function Credit() {
   return (
-    <div className={styles.credit}>Credit</div>
+    <div className={styles.credit}>Credit Page</div>
   )
 }
 
