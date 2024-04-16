@@ -1,5 +1,6 @@
 import * as React from "react";
 import { DataGrid } from "@mui/x-data-grid";
+import styles from './Category.module.css'
 
 const columns = [
   { field: "id", headerName: "ID", width: 70 },
@@ -53,7 +54,7 @@ const rows = [
 
 export default function CategoryList() {
   return (
-    <div style={{ height: 500, width: "100%" }}>
+    <div className={styles.table}>
       <DataGrid
         rows={rows}
         columns={columns}

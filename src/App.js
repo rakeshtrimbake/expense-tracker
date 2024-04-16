@@ -1,13 +1,19 @@
+import { useState } from "react";
 import "./App.css";
-import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
+import Login from "./components/Login/Login";
+// import Practice from "./components/Practice/Practice";
 
 function App() {
-  return (
+  const [isLogin, setIsLogin] = useState(false);
+  return isLogin ? (
     <div className="app">
-      <Header />
-      <Home/>
+      
+      <Home />
+      {/* <Practice num={10} /> */}
     </div>
+  ) : (
+    <Login />
   );
 }
 

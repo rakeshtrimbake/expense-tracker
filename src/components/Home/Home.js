@@ -3,20 +3,20 @@ import styles from "./Home.module.css";
 import Sidebar from "../Sidebar/Sidebar";
 
 import { Outlet } from "react-router-dom";
+import Header from "../Header/Header";
 
 function Home() {
   return (
     <>
+      <Header />
       <div className={styles.home}>
         <div className={styles.child}>
           <Sidebar />
         </div>
         <div className={styles.child}>
-          <Outlet />    
+          <Outlet />
         </div>
-        
       </div>
-      
     </>
   );
 }

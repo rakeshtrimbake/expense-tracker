@@ -4,6 +4,8 @@ import Category from "../components/Category/Category";
 import Credit from "../components/Credit/Credit";
 import Expense from "../components/Expense/Expense";
 import Reports from "../components/Reports/Reports";
+import Login from "../components/Login/Login";
+import AddCategory from "../components/Category/AddCategory";
 
 export const router = createBrowserRouter([
   {
@@ -11,8 +13,14 @@ export const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/category",
         element: <Category />,
+        children: [
+          {
+            path: "/category/add",
+            element: <AddCategory />,
+          },
+        ],
       },
       {
         path: "/credit",
@@ -25,6 +33,10 @@ export const router = createBrowserRouter([
       {
         path: "/reports",
         element: <Reports />,
+      },
+      {
+        path: "login",
+        element: <Login />,
       },
     ],
   },

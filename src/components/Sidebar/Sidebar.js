@@ -7,7 +7,7 @@ function Sidebar() {
     <>
       <ul className={styles.sidebar_list}>
         <li className={styles.list_item}>
-          <Link to="/" style={{ textDecoration: "inherit", color: "inherit" }}>
+          <Link to="/category" style={{ textDecoration: "inherit", color: "inherit" }}>
             {`category`.toUpperCase()}
           </Link>
         </li>

@@ -17,3 +17,6 @@
   font-weight: 600;
   color: white;
 }
+.list_item:hover{
+    color:#04cff8db
+}

@@ -29,6 +29,10 @@
   list-style: none;
   font-size: 16px;
   font-weight: 600;
-  color: rgb(145, 32, 145);
+  color: rgb(32, 77, 145);
   cursor: pointer;
+}
+
+.list_item:hover{
+  color:#04cff8db
 }

@@ -29,7 +29,12 @@ const Header = () => {
             </Link>
           </li>
           <li className={styles.list_item}>
-            <Link to="/login">{`Login`.toUpperCase()}</Link>
+            <Link
+              to="/login"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              {`Login`.toUpperCase()}
+            </Link>
           </li>
         </ul>
       </header>
